@@ -131,8 +131,7 @@ section{ position:relative; }
 /* ---------- Nav ---------- */
 .nav{ position:fixed; top:0; left:0; right:0; z-index:100; }
 .nav-inner{
-  display:flex; align-items:center; justify-content:space-between; gap:24px;
-  padding:18px 32px;
+  width:100%;
   background:rgba(245,244,240,0);
   border-bottom:1px solid transparent;
   transition:background .4s var(--ease-soft), border-color .4s, backdrop-filter .4s, box-shadow .4s var(--ease);
@@ -143,6 +142,10 @@ section{ position:relative; }
   -webkit-backdrop-filter:blur(22px) saturate(180%);
   border-bottom-color:rgba(10,13,18,.08);
   box-shadow:0 12px 30px -20px rgba(10,13,18,.25);
+}
+.nav-bar{
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  padding:18px 32px;
 }
 .logo{ display:flex; align-items:center; }
 .logo-img{ height:30px; width:auto; display:block; }
